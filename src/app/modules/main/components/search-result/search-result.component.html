@@ -1,0 +1,13 @@
+<div class="h-20 px-56">
+    <h2 class=" font-cardTitle text-sectionTitle font-Muli text-black">Continue your Search</h2>
+</div>
+<div class="h-10 px-56">
+    <h6 class=" font-sectionTitle text-cardSubTitle font-Muli text-black">All makes, +1filter</h6>
+</div>
+<div class="h-60 px-56">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template *ngFor="let vehicle of vehicles | async " carouselSlide>
+            <app-card [vehicle]="vehicle"></app-card>
+        </ng-template>
+    </owl-carousel-o>
+</div>

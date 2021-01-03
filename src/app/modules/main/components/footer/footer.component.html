@@ -1,0 +1,16 @@
+<div class="h-60 px-56">
+        <hr>
+        <div class="pt-4 grid grid-cols-8 gap-2">
+              <div class="grid grid-col-1 col-span-2 gap-2 ">
+                  <h6 class="text-cardSubTitle font-cardTitle px-4 font-Muli text-black"><a>auto.market</a></h6>
+              </div>
+              <div class="grid col-span-4 grid-flow-col grid-cols-3 grid-rows-4 gap-4 ">
+                    <h6 *ngFor="let link of links | async " class="text-cardSubTitle font-cardSubTitle px-4 font-Muli text-black"><a>{{link}}</a></h6>
+              </div>
+              <div class="grid grid-col-1 ">
+                    <img class="rounded-t-lg border-radius rounded object-cover h-auto w-full " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcx8sRXXQmSlzJSrNHCefb7yHRWl2BPBTuTA&usqp=CAU">
+                    <img class="rounded-t-lg border-radius rounded object-cover h-auto w-full " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmg07fTGGuLitBm5VvSmaQWiaN7R9EAX6xgg&usqp=CAU">
+            
+                </div>
+        </div>
+</div>

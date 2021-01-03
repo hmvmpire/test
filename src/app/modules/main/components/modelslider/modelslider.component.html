@@ -1,0 +1,12 @@
+<div class="h-20 px-56">
+    <h2 class=" font-cardTitle text-sectionTitle font-Muli text-black">{{title}}</h2>
+</div>
+
+
+<div class="h-96 px-56">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template *ngFor="let vehicle of vehicles | async " carouselSlide>
+            <app-full-card [vehicle]="vehicle"></app-full-card>
+        </ng-template>
+    </owl-carousel-o>
+</div>
